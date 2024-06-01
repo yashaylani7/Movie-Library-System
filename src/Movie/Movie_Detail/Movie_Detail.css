@@ -1,0 +1,142 @@
+#movie_detail_component{
+    margin-bottom: var(--block-bottom-space);
+}
+
+/* Whole container on left side */
+.movie_detail__poster_img_container{
+    position: relative;
+    border: 5px solid var(--bg-color-dark-blue);
+    padding: 0;
+    border-radius: 5px;
+    /* height: 95%; */
+    /* height: 700px; */
+    /* border: 2px solid greenyellow; */
+    /* margin-bottom: var(--block-bottom-space); */
+}
+
+.movie_detail_poster_heart_icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--primary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* For initially setting them off */
+/* #hear2{
+    opacity: 0;
+} */
+
+/* #wishlist2{
+    opacity: 0;
+} */
+
+.movie_detail_poster_wishlist_icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--primary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Tooltip over icons */
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+#movie_detail__poster_img{
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+    
+}
+
+#movie_detail__poster_rating{
+    margin-top: 6px;
+    /* height: 10%; */
+    background-color: var(--bg-color-dark-green);
+    color: var(--primary-color);
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#movie_detail__poster_rating .icon-star{
+    padding: 0 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    
+}
+#movie_detail__poster_rating p{
+    margin: 2px 0;
+    padding: 0;
+    display: inline;
+}
+
+/* Right side section (Details) */
+.movie_detail__content{
+    background-color: var(--bg-color-dark-blue);
+}
+
+.movie_detail__content div{
+        margin-top: 10px;
+        padding: 10px 10px;
+        background-color: var(--bg-color-dark-green);
+        padding-bottom: 10px;
+        border-radius: 5px;
+}
+
+#movie_detail__title{
+    font-size: 3rem;
+}
+
+.movie_detail__single_line_block{
+    font-size: 1.1rem;
+}
+
+.movie_detail__sub_heading{
+    width: 100%;
+    font-size: 2rem;
+    
+}
+
+#movie_detail__description{
+    height: 250px;
+    overflow-y: auto;
+}
+
+/* #movie_detail__genres-container {
+    display: flex;
+    overflow-x: auto;
+} */
+
+#movie_detail__genre-capsule {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 8px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.045);
+    /* Whitish color with transparency */
+    white-space: nowrap;
+    /* Prevent line breaks within capsules */
+}
+
+#movie_details__imdb_link:hover, #movie_details__rate_movie:hover{
+    color: var(--primary-color);
+}

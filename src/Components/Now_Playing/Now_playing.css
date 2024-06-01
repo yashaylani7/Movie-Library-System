@@ -1,0 +1,123 @@
+.now-playing {
+    margin-top: 30px;
+}
+
+.now-playing .headings{
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 8px 0px;
+}
+
+.carousel-img,
+#upNextMoviesCards {
+    max-height: var(--carousel-card-max-height);
+}
+
+.main-container,
+.headings {
+    display: grid;
+    grid-template-columns: 2.5fr 1.45fr;
+    gap: 30px;
+}
+
+
+.main-container,
+.headings {
+    margin-left: var(--primary-mg-left);
+    margin-right: var(--primary-mg-right);
+}
+
+.main-container {
+    margin-bottom: var(--block-bottom-space);
+}
+
+
+#upNextMoviesCards {
+    background-color: var(--primary-body-bg-color);
+    max-height: 730px;
+    min-width: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.upNextMoviesCards__card {
+    display: flex;
+    background-color: var(--bg-color-dark-blue);
+    /* border: 2px solid var(--primary-color); */
+    max-height: 220px;
+}
+
+.upNextMoviesCards__card:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+#upNextMoviesCards__card__img {
+    width: 100%;
+    height: 220px;
+}
+
+.card-body {
+    padding-top: 7px;
+    padding-right: 12px;
+}
+
+.card-body .card-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    
+}
+
+.card-body .card-text{
+    max-height: 120px;
+    min-height: 120px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        /* number of lines to display */
+        -webkit-box-orient: vertical;
+}
+
+#now_playing_up_next__movie_btn{
+    margin-top: 8px;
+    background-color: var(--primary-color-dark);
+    color: var(--primary-text-color);
+    /* border: none; */
+    padding: 10px 18px;
+    border-radius: 5px;
+    /* font-size: 1.2rem; */
+    cursor: pointer;
+}
+
+#now_playing_up_next__movie_btn:hover{
+    /* background-color: var(--primary-color); */
+    color: var(--primary-text-color);
+    outline: 2px solid var(--primary-glow-outline-color);
+}
+
+/* Style the scrollbar */
+#upNextMoviesCards::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+#upNextMoviesCards::-webkit-scrollbar-track {
+    background: var(--primary-body-bg-color);
+    border-radius: 5px;
+    /* Color of the track */
+}
+
+#upNextMoviesCards::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+    /* Color of the scroll thumb */
+}
+
+#upNextMoviesCards::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color-dark);
+    /* Color of the scroll thumb on hover */
+}

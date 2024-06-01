@@ -1,0 +1,432 @@
+.top_rated__main-heading {
+    display: block;
+    margin-left: var(--primary-mg-left);
+}
+
+/* Contains whole component */
+.top-rated-movies-cards {
+    margin-left: var(--primary-mg-left);
+    margin-right: var(--primary-mg-right);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 97%;
+    margin-bottom: var(--block-bottom-space);
+}
+
+
+/* Complete container of the card */
+.top_rated__main-container {
+    width: var(--main-movie-card-width);
+    height: fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.top_rated__main-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Image area */
+.card {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    border: 5px solid var(--bg-color-dark-blue);
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: height 0.7s ease;
+    color: rgb(0, 255, 0);
+}
+
+.card:hover .card__overlay {
+    height: 100%;
+}
+
+.icon-star {
+    padding-top: 40px;
+    width: fit-content;
+    margin: auto;
+}
+
+.rating {
+    font-size: xx-large;
+    font-weight: bold;
+    padding-top: 20px;
+    width: fit-content;
+    margin: auto;
+}
+
+/* Overlay Details Button */
+.button-detail {
+    padding-top: 80px;
+    width: fit-content;
+    margin: auto;
+
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: var(--primary-color-dark);
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__content {
+    padding: 0px 15px;
+    background-color: var(--bg-color-dark-blue);
+    padding-bottom: 10px;
+
+}
+
+.movie-title {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.movie-title:hover {
+    color: rgb(0, 255, 0);
+
+}
+
+.movie-year {
+    color: #ffffff82;
+}
+
+.top_rated__main-heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 8px 0px;
+    display: block;
+    margin-left: var(--primary-mg-left);
+}
+
+/* Contains whole component */
+.top-rated-movies-cards {
+    margin-left: var(--primary-mg-left);
+    margin-right: var(--primary-mg-right);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 97%;
+    margin-bottom: var(--block-bottom-space);
+}
+
+
+/* Complete container of the card */
+.top_rated__main-container {
+    width: var(--main-movie-card-width);
+    height: fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.top_rated__main-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Image area */
+.card {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    border: 5px solid var(--bg-color-dark-blue);
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: height 0.7s ease;
+    color: rgb(0, 255, 0);
+}
+
+.card:hover .card__overlay {
+    height: 100%;
+}
+
+.icon-star {
+    padding-top: 40px;
+    width: fit-content;
+    margin: auto;
+}
+
+.rating {
+    font-size: xx-large;
+    font-weight: bold;
+    padding-top: 20px;
+    width: fit-content;
+    margin: auto;
+}
+
+/* Overlay Details Button */
+.button-detail {
+    padding-top: 80px;
+    width: fit-content;
+    margin: auto;
+
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: var(--primary-color-dark);
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__content {
+    padding: 0px 15px;
+    background-color: var(--bg-color-dark-blue);
+    padding-bottom: 10px;
+
+}
+
+.movie-title {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.movie-title:hover {
+    color: rgb(0, 255, 0);
+
+}
+
+.movie-year {
+    color: #ffffff82;
+}
+
+/* See More button */
+#top_rated__see_more_btn {
+    margin: auto;
+    padding: 0.8em 1.8em;
+    border: 2px solid var(--primary-glow-outline-color);
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: white;
+    border-radius: 5px;
+}
+
+#top_rated__see_more_btn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: var(--primary-color-dark);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+#top_rated__see_more_btn:hover::before {
+    width: 105%;
+}
+
+#top_rated__see_more_btn:hover {
+    color: white;
+}

@@ -1,0 +1,52 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* You can add global styles to this file, and also import other style files */
+:root {
+  /*  */
+  --primary-mg-left: 30px;
+  --primary-mg-right: 30px;
+  --carousel-card-max-height: 730px;
+  --block-bottom-space: 30px;
+
+
+  /* bg-colors */
+  --primary-body-bg-color: #282e28;
+  --bg-color-dark-1-trans: #00000066;
+  --bg-color-dark-2-trans: #22222266;
+  --bg-color-dark-blue: #1b2925;
+  --bg-color-dark-green: #163f33;
+
+  /* colors */
+  --primary-color: #00ff1e;
+  --primary-color-dark: #15ab26;
+  --primary-glow-outline-color: #0dff00;
+
+
+  /* */
+  --eye-border-radius-more: 40px 0px 40px 0px;
+  --primary-skew: skewX(-20deg);
+
+  /* Fonts */
+  --primary-font: sans-serif;
+
+  /*  */
+  --main-movie-card-width: 280px;
+}
+
+
+
+body {
+  box-sizing: border-box;
+  background-color: var(--primary-body-bg-color);
+  color: white;
+}
+
+h1 {
+  color: var(--primary-color);
+}
