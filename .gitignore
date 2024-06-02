@@ -24,5 +24,8 @@ dist-ssr
 *.sw?
 
 # Account details
+<<<<<<< HEAD
 
+=======
+>>>>>>> e5743104b23085effec94c01323efbcd64ea5666
 MovieSystemAPIKeys.txt
